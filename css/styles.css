@@ -165,11 +165,10 @@ iframe{
     justify-self: center;
     }
     .contenedor {
-        margin: 50px auto;
-        width: 400px;
-        padding: 50px;
+        /* margin: 50px auto; */
+        width: 350px;
+        /* padding: 50px; */
         background: #DC6B19;
-        border-radius: 35px;
     }
     .banner{
         height: 300px;
