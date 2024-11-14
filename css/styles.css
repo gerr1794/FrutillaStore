@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Delius+Swash+Caps&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #FFF8DC;
+}
+h1, h2, h3{
+    font-family: "Delius Swash Caps", cursive;
+    text-align: center;
+    font-weight: 400;
+    font-style: normal;
+}
+p{
+    text-align: center;
+    font-family: "Cinzel Decorative", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+.banner{
+    height: 500px;
+    width: 100%;
+}
+/* estilos grilla de productos */
+.container {
+    display: grid;
+    padding-top: 25px;
+    grid-gap: 10rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 500px 500px;
+    justify-content: center;
+}
+.navbar{
+    --bs-navbar-padding-y: 0rem;
+}
+.navbar-custom{
+    color: white;
+}
+.navbar-custom:hover{
+    color: #F7C566
+}
+.navbarcolor{
+    background-color: #6C0345;
+}
+.navbar-light .navbar-toggler-icon { background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+.navbar-light .navbar-toggler { border-color: rgba(255, 255, 255, 1);
+}
+p{
+    max-width: 1000px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+.redesSociales{
+    height: 40px;
+    width: 40px;
+}
+footer{
+    display: flex;
+    background-color: #6C0345;
+    color: white;
+    margin-top: 150px;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+}
+div h3{
+    display:inline;
+}
+
+
+/* estilos formulario de contacto */
+
+.contenedor{
+    margin: 50px auto;
+    width: 600px;
+    padding: 50px;
+    background: #DC6B19;
+    border-radius: 35px;
+}
+.contenedor h2{
+    margin: 0 0 30px;
+    padding: 0;
+    font-size: 30px;
+    color: #6C0345;
+    text-align: center;
+}
+.contenedor .elemento label{
+    color: white;
+}
+.contenedor .elemento input{
+    width: 95%;
+    padding: 10px 0;
+    color: black;
+    background: #ffffff;
+    border: none;
+    border-bottom: 1px solid white;
+    margin-bottom: 30px;
+}
+.contenedor .elemento input[type="submit"]{
+    background-color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 15px;
+    margin-top: 30px;
+}
+.select-css{
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    padding: 10px;
+    width: 365px;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin: 15px -5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    appearance: none;
+    background-color: #ffffff;
+}
+.contenedor .elemento input[type="reset"] {
+    background-color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 15px;
+    margin-top: 30px;
+}
+.textArea{
+    margin: 10px 10px 10px 0px;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    min-height: 100px;
+    max-height: 250px;
+    max-width: 100%;
+}
+iframe{
+    width: 100%;
+}
+.agregarcarrito{
+    background: #F7C566;
+}
+
+
+
+/* Media queries */
+@media screen and (max-width: 600px) {
+    .container {
+    display: grid;
+    padding: 1rem;
+    /* grid-gap: 9rem; */
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    justify-content: center;
+    }
+    .hijo{
+    align-self: center;
+    justify-self: center;
+    }
+    .contenedor {
+        margin: 50px auto;
+        width: 450px;
+        padding: 50px;
+        background: #DC6B19;
+        border-radius: 35px;
+    }
+    .banner{
+        height: 300px;
+    }
+    footer{
+        flex-direction: column;
+    }
+}
