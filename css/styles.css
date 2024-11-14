@@ -154,13 +154,6 @@ iframe{
 }
 
 /*! seccion carrito */
-.productosCarrito{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: space-around;
-}
 .titulo-carrito{
     margin: 0;
 }
