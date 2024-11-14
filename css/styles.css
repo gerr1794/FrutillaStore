@@ -176,4 +176,7 @@ iframe{
     footer{
         flex-direction: column;
     }
+    footer h4 {
+        font-size: 14px;
+    }
 }
