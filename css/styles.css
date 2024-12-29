@@ -33,7 +33,7 @@ margin: 15px 0 55px 0;
     padding-top: 25px;
     grid-gap: 10rem;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 500px 500px;
+    grid-template-rows: 550px 550px;
     justify-content: center;
 }
 .navbar{
@@ -75,8 +75,11 @@ div h3{
     display:inline;
 }
 
-/* estilos formulario de contacto */
+/*! estilos formulario de contacto */
 
+form{
+    padding-top: 150px;
+}
 .contenedor{
     margin: 50px auto;
     width: 600px;
@@ -151,6 +154,8 @@ iframe{
 }
 .agregarcarrito{
     background: #F7C566;
+    display: flex;
+    justify-content: center;
 }
 
 /*! seccion carrito */
@@ -161,7 +166,31 @@ iframe{
     height: 170px;
     width: 170px;
 }
-
+.submenu #carrito{
+    display: none;
+}
+.submenu:hover #carrito{
+    display: block;
+    position: absolute;
+    top:100%;
+    z-index: 1;
+    background-color: white;
+    padding: 70px;
+    min-height: 400px;
+    min-width: 300px;
+    cursor: pointer;
+}
+.borrar-producto{
+    background-color: red;
+    border-radius: 50%;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+tr th{
+    padding: 25px;
+}
 /*! Media queries */
 @media screen and (max-width: 600px) {
     .container {
@@ -177,9 +206,7 @@ iframe{
     justify-self: center;
     }
     .contenedor {
-    /* margin: 50px auto; */
     width: 350px;
-    /* padding: 50px; */
     background: #DC6B19;
     }
     .banner{
@@ -198,5 +225,11 @@ iframe{
     }
     .productosCarrito{
         flex-direction: column;
+    }
+    tr th{
+        padding: 5px;
+    }
+    form{
+        padding-top: 80px;
     }
 }
